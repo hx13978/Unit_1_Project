@@ -16,7 +16,7 @@ function runTrivia() {
     }
     currentQIndex ++;
     previousQIndex ++;
-
+    
     //console.log('current', questions[currentQIndex]);   
 }
 
@@ -28,6 +28,10 @@ document.querySelectorAll('.correct').forEach(correct => {
     correct.addEventListener('click', scoreTally)
 })
 
+let restart = document.querySelectorAll('.restart');
+restart[0].addEventListener('click', restartTrivia);
+
+//Logging each correct answer
 let score = 0
 
 function scoreTally() {
@@ -35,6 +39,22 @@ score = score ++;
 console.log(score);
 }
 
-let restart = document.querySelector('.restart')
-restart.addEventListener('click', runTrivia);
-
+//Display score results and offer player to restart trivia game
+function restartTrivia () {
+    if (score === 10) {
+        alert("Congratulations!!!  You got all ten questions correct!  Score: 100%");
+    }
+    else if (score === 9) {
+        alert("Great Job!  You got nine out of ten questions correct!  Score: 90%");
+    }
+    else if (score === 8 || score === 7) {
+        alert('Not bad!  You got seven to eight questions correct. Score: 70-80%')
+    }
+    else {
+        alert('Looks like you could sharpen your animal knowledge!  You got less than seven questions correct. Score: <= 60%')
+    }
+    currentQIndex = 0;
+    previousQIndex = -1;
+    score = 0;
+   
+}
