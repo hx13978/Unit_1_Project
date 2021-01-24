@@ -9,10 +9,12 @@ body {
 }
 
 h1 {
+    font-size: 25px;
     margin: 5%;
     font-style: italic;
     text-decoration: underline;
 }
+
 .answer {
     font-size: 25px;
 }
@@ -66,7 +68,7 @@ button:hover {
 }
 
 img {
-    width: 100%;
+    width: 55%;
     height: auto;
 }
 
@@ -84,7 +86,7 @@ img {
         font-size: 15px;
     }
     img {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
 }
