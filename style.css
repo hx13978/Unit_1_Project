@@ -1,6 +1,7 @@
 body {
     background-color: aquamarine;
     text-align: center;
+    font-family: 'Goudy Bookletter 1911', serif;
 }
 
 .directions {
@@ -62,4 +63,28 @@ button:hover {
 .selection:hover {
     background-color: rgb(249, 250, 168);
     color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.result {
+    font-size: 30px;
+    margin-top: 20%;
+    padding: 5%;
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 15px;
+    }
+    .selection {
+        font-size: 15px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
