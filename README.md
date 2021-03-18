@@ -9,7 +9,7 @@ Upon loading the website, the user will be provided with a set of directions sta
 - CSS, Responsive Web Design
 - Javascript
 
-[Trivia](https://hx13978.github.io/Unit_1_Project/)
+[Self Scoring Trivia Link](https://hx13978.github.io/Unit_1_Project/)
 
 # Next Steps
 One improvement would be to shuffle the question sequence each time the game is played.
